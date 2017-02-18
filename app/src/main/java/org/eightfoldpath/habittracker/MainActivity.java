@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         displayHabits();
     }
 
-    private void displayHabits() {
+    private Cursor displayHabits() {
 
         // Create and/or open a database to read from it
         SQLiteDatabase db = dbHelper.getReadableDatabase();
@@ -73,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
         } finally {
             cursor.close();
         }
+
+        return cursor;
     }
 
     /**
