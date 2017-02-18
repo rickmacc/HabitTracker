@@ -6,7 +6,7 @@ import android.provider.BaseColumns;
  * Created by rick on 2/18/17.
  */
 
-public class HabitContract implements BaseColumns {
+public final class HabitContract implements BaseColumns {
 
     // Privatize the constructor to prevent instantiation.
     private HabitContract() {}
